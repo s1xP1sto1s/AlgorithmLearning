@@ -1,5 +1,9 @@
-package Sort;
+/*
+选择排序：需要N(N-1)/2次比较和N次交换。
+特点：时间复杂度为O(n^2),所需的交换次数少。
+*/
 
+package Sort;
 import java.util.Arrays;
 
 public class SelectionSort {
@@ -13,7 +17,7 @@ public class SelectionSort {
 			System.out.print(tmp+" ");
 		}
 	}
-	//ʹ�÷��ͺͷ����޶�
+	//使用泛型和泛型限定
 	public static <T extends Comparable> void sort(T[] arr)
 	{
 		int len = arr.length;
@@ -31,7 +35,7 @@ public class SelectionSort {
 		}
 	}
 /*	
- *Ӧ�ö�̬����
+ *应用多态特性
 	public static void sort(Comparable[] arr)
 	{
 		int len = arr.length;
